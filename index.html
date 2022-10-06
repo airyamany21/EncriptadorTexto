@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="icon" href="Imagenes/iconlogo.png" />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="Imagenes/logo.png"
+        alt="Logo de Alura con la inicial de la letra A"
+      />
+      <p>Encriptador de Texto</p>
+    </header>
+    <main>
+      <section>
+        <textarea
+          id="textarea1"
+          class="input-texto"
+          cols="80"
+          rows="35"
+          placeholder="Ingrese texto aquí"
+        ></textarea>
+        <textarea id="textarea2" class="mensaje" cols="44" rows="35"></textarea>
+        <div class="nota">
+          <p>*Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button
+            class="encriptar"
+            style="color: white"
+            onclick="btnEncriptar()"
+          >
+            Encriptar 🡆
+          </button>
+          <button
+            class="desencriptar"
+            style="color: white"
+            onclick="btnDesencriptar()"
+          >
+            Desencriptar 🡆
+          </button>
+          <button class="borrar" style="color: white" onclick="btnBorrar()">
+            Borrar
+          </button>
+          <button class="enviar" style="color: white" onclick="btnEnviar()">
+            🡄 Enviar
+          </button>
+        </div>
+      </section>
+      <br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
+      <section>
+        <div id="mensajetext1" class="mensaje1">
+          <p>Ningún mensaje fue encontrado</p>
+        </div>
+        <div id="mensajetext2" class="mensaje2">
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-waves-body">
+        <p class="alura">Alura</p>
+        <div class="redes">
+          <a
+            class="lk"
+            href="https://www.linkedin.com/company/alura-latam/"
+            target="_blank"
+          ></a>
+          <a
+            class="fb"
+            href="https://www.facebook.com/aluracursoslatam"
+            target="_blank"
+          ></a>
+          <a
+            class="tw"
+            href="https://twitter.com/aluraonline?lang=es"
+            target="_blank"
+          ></a>
+        </div>
+        <p class="copyright">
+          &copy All Rights Reserved 2022, Author by Yamany Vara.
+        </p>
+        <div>
+          <svg
+            class="footer-waves-content"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="footer-wave-parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgb(255,255,255,0.7"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgb(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgb(255,255,255,0.3)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="7"
+                fill="rgb(255,255,255,1)"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
